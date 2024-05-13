@@ -75,14 +75,22 @@ Personagem* Simulador::proximoPersonagem(vector<Personagem*> equipe)
         return nullptr;
     }
 
-    int contador = 0;
-    while (contador < tamanho)
+    int contador = 0;// sempre zera o contador
+    while (1)
     {
-        if (equipe[contador]->getVida()>0)
+        float aux = (std::rand() % tamanho); // pega um personagem entre 0 e o maximo de personagens
+        if (equipe[aux]->getVida()>0) // Se o personagem ainda estiver vivo
         {
-            return equipe[contador];
+            return equipe[aux]; // retorna ele
         }
-        contador++;
+        for(int i = 0; i<=equipe.size(); i++){ // senão varre toda a equipe 
+            if(equipe[i]->getVida() == 0) {
+                contador++; // se algum personagem estiver morto, adiciona no contador
+            }
+        }
+        if(contador = equipe.size()) { // caso todos os personagens da equipe morrerem
+             return nullptr; 
+        }
 
     }
 

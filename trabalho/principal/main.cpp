@@ -26,14 +26,15 @@ using std::string;
 
 int main()
 {
-    ArmaAtaque* arma  = new Rosa("Super Rosa Amarela",0,10);
-    ArmaAtaque* arma2 = new Colher("Colher de Pata",0,50);
-    ArmaDefesa* escudo = new Escudo("Latão", 1);
+    ArmaAtaque* arma_forte  = new Pistola_quantica_5k("Pistola quantica 5k vermelha",30,70);
+    ArmaAtaque* arma_fraca = new Cabo_Tipo_C("Carregador de Xiaomi",2,15);
+    ArmaDefesa* escudo_forte = new Fiat_uno("Fiat uno ano 2005 seminovo", 9);
+    ArmaDefesa* escudo_fraco = new Cobertor("Cobertor fino preto", 2);   
     
-    Personagem* p1 = new Chaves(1, "Chaves Eq1", 100, arma, escudo);
-    Personagem* p3 = new Chaves(1, "Chaves Eq1 - Reserva", 100, arma, escudo);
-    Personagem* p2 = new Chaves(2, "Chaves Eq2", 40, arma, escudo);
-    Personagem* p4 = new Chaves(2, "Chaves Eq2 - Reserva", 100, arma, escudo);
+    Personagem* p1 = new Velma(1, "Velma", 100, arma_fraca, escudo_forte);
+    Personagem* p3 = new Scooby_doo(1, "Scooby Doo", 100, arma_forte, escudo_fraco);
+    Personagem* p2 = new Fred(2, "Fred", 40, arma_fraca, escudo_fraco);
+    Personagem* p4 = new Salsicha(2, "Sasicha", 100, arma_forte, escudo_forte);
 
     Simulador* simulador = new Simulador();
     simulador->adicionarPersonagem(p1, 1);
@@ -42,6 +43,5 @@ int main()
     simulador->adicionarPersonagem(p4, 2);
     
     simulador->iniciarSimulacao();
-
     return 0;
 }
