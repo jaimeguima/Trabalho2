@@ -1,5 +1,5 @@
 #!/bin/bash
-# source ./compilar.sh
+#  source ./compilar.sh
 cd acessorios-cpp/
 g++ -c *.cpp 
 cd ..

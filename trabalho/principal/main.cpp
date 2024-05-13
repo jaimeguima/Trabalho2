@@ -2,8 +2,22 @@
 #include <string>
 #include "../acessorios-hpp/Rosa.hpp"
 #include "../acessorios-hpp/Colher.hpp"
+#include "../acessorios-hpp/Abrigo_AntiBombas.hpp"
+#include "../acessorios-hpp/Cabo_Tipo_C.hpp"
+#include "../acessorios-hpp/Cobertor.hpp"
+#include "../acessorios-hpp/Colchao.hpp"
+#include "../acessorios-hpp/Desodorante.hpp"
+#include "../acessorios-hpp/Estilingue.hpp"
+#include "../acessorios-hpp/Fiat_uno.hpp"
+#include "../acessorios-hpp/Mesa_de_plastico.hpp"
+#include "../acessorios-hpp/Pistola_quantica_5k.hpp"
 #include "../acessorios-hpp/Escudo.hpp"
 #include "../personagens-hpp/Chaves.hpp"
+#include "../personagens-hpp/Scooby_doo.hpp"
+#include "../personagens-hpp/Velma.hpp"
+#include "../personagens-hpp/Fred.hpp"
+#include "../personagens-hpp/Daphne.hpp"
+#include "../personagens-hpp/Salsicha.hpp"
 #include "../core-simulador-hpp/Simulador.hpp"
 
 using std::cout;
